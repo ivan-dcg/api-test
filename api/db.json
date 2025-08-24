@@ -1,0 +1,27 @@
+{
+    "funds": [
+      { "id": "1", "name": "FPV_BTG_PACTUAL_RECAUDADORA", "minAmount": 75000, "categoryId": "1" },
+      { "id": "2", "name": "FPV_BTG_PACTUAL_ECOPETROL", "minAmount": 125000, "categoryId": "1" },
+      { "id": "3", "name": "DEUDAPRIVADA", "minAmount": 50000, "categoryId": "2" },
+      { "id": "4", "name": "FDO-ACCIONES", "minAmount": 250000, "categoryId": "2" },
+      { "id": "5", "name": "FPV_BTG_PACTUAL_DINAMICA", "minAmount": 100000, "categoryId": "1" }
+    ],
+    "categories": [
+      { "id": "1", "name": "FPV"  },
+      { "id": "2", "name": "FIC" }
+    ],
+    "users": [
+      {"id": "1", "name": "fulano asd", "email": "user@gmail.com", "password": "12345", "accountBalance": 500000}
+    ],
+    "subscriptions": [
+      { "id": "1", "userId": "1", "fundId": "1", "amount": 100000, "createdAt": "2023-01-01", "notificationId": "1", "status": "active" },
+      { "id": "2", "userId": "1", "fundId": "2", "amount": 150000, "createdAt": "2023-02-01", "notificationId": "2", "status": "active" }
+    ], 
+    "transactions": [
+      { "id": "1", "subscriptionId": "1", "createdAt": "2023-01-01", "type": "suscripcion" }
+    ],
+    "notifications": [
+      { "id": "1", "message": "Your subscriptions has been actived", "type": "email" },
+      { "id": "2", "message": "Your subscriptions has been actived", "type": "sms" }
+    ]
+  }
